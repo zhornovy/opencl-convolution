@@ -20,7 +20,7 @@ Change image resolution if you need it.
 int width = 640,height = 480;      // change it to yours one
 ```
 
-If you do not want to use OpenCV you need to delete loop scopes and raplace following code with data array of your image.
+If you do not want to use OpenCV you need to delete loop scopes and replace following code with data array of your image.
 ```c
  cv::VideoCapture cap(0);
     if (!cap.isOpened())
