@@ -1,8 +1,8 @@
 /******************************************************************************
- *   File: main.cpp
- *   Description: Image convolution using OpenCL computing kernel.
- *   Created: 10 oct 2017
- *   Copyright: (C) 2017 Edward Zhornovy <ed@zhornovy.com>
+ * File: main.cpp
+ * Description: Image convolution using OpenCL computing kernel.
+ * Created: 10 oct 2017
+ * Copyright: (C) 2017 Edward Zhornovy <ed@zhornovy.com>
  *
  *   This program is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@
 
 using namespace std;
 
-const int width = 640,height = 480;       // my webcam resolution, change it to yours one
+int width = 640,height = 480;       // my webcam resolution, change it to yours one
 
 int err;                            // error output
 size_t global;                      // global domain size for our calculation
@@ -263,18 +263,10 @@ int main()
 }
 
 void showMatrix(uchar* data,int width){
-    int sampleI = 300;
-    int sampleJ = 120;
     cout << "\n";
-    cout << (int)data[simpleI     + sampleJ     * width] << "|" 
-         << (int)data[simpleI     + (sampleJ+1) * width] << "|" 
-         << (int)data[simpleI     + (sampleJ+2) * width] << endl;
-    cout << (int)data[(simpleI+1) + sampleJ     * width] << "|" 
-         << (int)data[(simpleI+1) + (sampleJ+1) * width] << "|" 
-         << (int)data[(simpleI+1) + (sampleJ+2) * width] << endl;
-    cout << (int)data[(simpleI+2) + sampleJ     * width] << "|" 
-         << (int)data[(simpleI+2) + (sampleJ+1) * width] << "|" 
-         << (int)data[(simpleI+2) + (sampleJ+2) * width] << endl;
+    cout << (int)data[300 + 120 * width] << "|" << (int)data[300 + 121 * width] << "|" << (int)data[300 + 122 * width] << endl;
+    cout << (int)data[301 + 120 * width] << "|" << (int)data[301 + 121 * width] << "|" << (int)data[301 + 122 * width] << endl;
+    cout << (int)data[302 + 120 * width] << "|" << (int)data[302 + 121 * width] << "|" << (int)data[302 + 122 * width] << endl;
 }
 
 void show(const std::string& name, const cv::Mat& mat)
