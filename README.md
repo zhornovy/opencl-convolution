@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 The initial example requires OpenCV library to capture a raw image that will be used as an input source for a convolution. If you do not have OpenCV you can use any other image with one color channel.
 Also, you have to and OpenCL framework to your liker arguments if it is required. 
-> Do not forget to install GPU drivers to be able to use OpenCV. Sometimes, generic drivers do not support OpenCV.
+> Do not forget to install GPU drivers to be able to use OpenCL. Sometimes, generic drivers do not support OpenCL.
 
 Change image resolution if you need it.
 
@@ -48,4 +48,4 @@ Any C++ compiler with C++11 standard or higher.
 
 ## License
 
-This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](LICENSE) file for details.
