@@ -44,7 +44,7 @@ Any C++ compiler with C++11 standard or higher.
 ## Built With
 
 * [OpenCL](https://www.khronos.org/opencl/) - The cross-platform framework using for a parallel computing
-* [OpenCV](https://opencv.org/) -  The library mainly aimed at real-time computer vision.
+* [OpenCV](https://opencv.org/) -  The library of programming functions mainly aimed at real-time computer vision.
 
 ## License
 
